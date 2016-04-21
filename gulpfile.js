@@ -6,13 +6,6 @@ var browserSync = require('browser-sync').create(); //
 var wiredep = require('wiredep').stream; //
 var reload = browserSync.reload;
 
-//var plumberErrorHandler = {errorHandler: notify.onError({
-//    title: 'Gulp',
-//    message: 'Error <%= error.message %>'
-//})
-//};
-
-
 gulp.task('injectAppFiles', function(){
     var sources = gulp.src(['./app/styles/**/*.css'], {read: false});
     var target = gulp.src('./app/index.html');

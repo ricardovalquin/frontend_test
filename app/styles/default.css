@@ -1,5 +1,28 @@
-.hello {
-  background-color: red;
+body {
+  background-color: #2773a5;
+  background: radial-gradient(#308fcf 2%, #2773a5);
+  background-repeat: no-repeat;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+body .title {
+  width: 100%;
+  text-align: center;
+  color: whitesmoke;
+  border-bottom: 1px solid black;
+}
+
+body .title h2 {
+  text-shadow: 0 -1px 0 black;
+}
+
+body .title .doctors .padding-doctor {
+  display: inline-block;
+  max-width: 50%;
+  min-height: 50px;
+  width: 49%;
+  display: inline-block;
 }
 
 /*# sourceMappingURL=default.css.map */

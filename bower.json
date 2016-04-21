@@ -1,0 +1,21 @@
+{
+  "name": "front_end_test",
+  "description": "a test for html5 and css3",
+  "main": "gulpfile.js",
+  "authors": [
+    "ricardovalquin"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/ricardovalquin/front-end_test",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.3",
+    "bootstrap": "^3.3.6"
+  }
+}

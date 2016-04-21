@@ -1,0 +1,48 @@
+{
+  "name": "front_end_test",
+  "version": "1.0.0",
+  "description": "a test for html5 and css3 ",
+  "engines": {
+    "node": "4.4.1",
+    "npm": "2.14.20"
+  },
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricardovalquin/front-end_test.git"
+  },
+  "author": "ricardovalquin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ricardovalquin/front-end_test/issues"
+  },
+  "homepage": "https://github.com/ricardovalquin/front-end_test#readme",
+  "devDependencies": {
+    "bower": "^1.7.9",
+    "browser-sync": "^2.12.3",
+    "eslint": "^2.7.0",
+    "eslint-friendly-formatter": "^2.0.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-eslint": "^2.0.0",
+    "gulp-inject": "^4.0.0",
+    "gulp-jshint": "^2.0.0",
+    "gulp-load-plugins": "^1.2.2",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.2.0",
+    "gulp-shorthand": "^1.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-util": "^3.0.7",
+    "jshint": "^2.8.0",
+    "stream-series": "^0.1.1",
+    "wiredep": "^4.0.0"
+  }
+}

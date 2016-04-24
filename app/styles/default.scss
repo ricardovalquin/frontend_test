@@ -24,9 +24,40 @@ $primary-color:#066CAF;
 $gradient-color:#308fcf;
 $card-color:#368ECA;
 
+
+.title-container {
+  position: relative;
+  z-index: -5;
+}
+.title {
+  position:relative;
+  width:40%;
+  padding:1em;
+  background: radial-gradient($gradient-color 33%, $primary-color);
+  box-shadow: inset -6px -2px 12px -4px rgba(255,255,255,1)
+}
+
+.title:before,
+.title:after {
+  content:"";
+  position:absolute;
+  z-index:-2;
+}
+
+.curva:before {
+  box-shadow:0 0 15px rgba(0,0,0,0.6);
+  top:50%;
+  bottom:0;
+  left:10px;
+  right:10px;
+  border-radius:185px / 35px;
+}
+
+
 /* Universal Selectors */
 /* Element Selectors */
 body {
+  margin:0;
   height: 100%;
   background-color: $primary-color;
   background: radial-gradient($gradient-color 33%, $primary-color);
@@ -42,11 +73,15 @@ body {
   width: 100%;
   text-align: center;
   color: whitesmoke;
-  border-bottom: 1px solid black;
+  //border-bottom: 1px solid black;
 }
 
 .title h2{
   text-shadow: 0 -1px 0 black;
+}
+
+.title .sub-title{
+  font-size: 25px;
 }
 
 .doctors{
@@ -90,11 +125,6 @@ body {
   left: 4%;
   border-style: solid;
   border-color: white;
-/*  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-position: center center;
-  background-image: url('https://pbs.twimg.com/profile_images/2650210446/c8ccb28dd7492c586fb38e438121c404_400x400.jpeg');*/
 }
 
 .doctor-card .doctor-name{
@@ -131,3 +161,16 @@ body {
 /* !important Element Selectors */
 /* !important Class, Attribute, and Pseudo Selectors */
 /* !important ID Selectors */
+
+
+/* media queries */
+
+@media (max-width: 719px){
+  .doctor-card .doctor-name{
+    width: 8em;
+  }
+
+  .doctor-card .doctor-code{
+    width: 8em;
+  }
+}

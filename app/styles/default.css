@@ -22,10 +22,9 @@
 
 .title {
   position: relative;
-  width: 40%;
   padding: 1em;
   background: radial-gradient(#308fcf 33%, #066CAF);
-  box-shadow: inset -6px -2px 12px -4px white;
+  box-shadow: inset 0px -2px 12px -4px white;
 }
 
 .title:before,
@@ -44,10 +43,13 @@
   border-radius: 185px / 35px;
 }
 
+.title .curva .curva-h {
+  box-sizing: border-box !important;
+}
+
 /* Universal Selectors */
 /* Element Selectors */
 body {
-  margin: 0;
   height: 100%;
   background-color: #066CAF;
   background: radial-gradient(#308fcf 33%, #066CAF);
@@ -56,26 +58,40 @@ body {
   font-family: "AvenirNextLTPro", verdana, arial, sans-serif;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 /* Class, Attribute, and Pseudo Selectors */
-.title {
+.title, .titles {
   width: 100%;
   text-align: center;
-  color: whitesmoke;
+  color: white;
+}
+
+.title {
+  width: 98%;
 }
 
 .title h2 {
   text-shadow: 0 -1px 0 black;
+  marign-top: 2%;
 }
 
 .title .sub-title {
   font-size: 25px;
 }
 
+.sub-title-2 {
+  font-size: 23px;
+}
+
 .doctors {
   margin-top: 35px;
 }
 
-.doctors .padding-doctor {
+.doctors .padding-doctor, .programs .padding-program {
   width: 49%;
   display: inline-block;
   box-sizing: border-box;
@@ -85,7 +101,7 @@ body {
   height: 105px;
 }
 
-.padding-doctor .doctor-card {
+.padding-doctor .doctor-card, .program-card {
   border-radius: 90px 90px 90px 90px;
   background-color: #368ECA;
   width: 75%;
@@ -95,6 +111,22 @@ body {
   height: 103px;
   position: relative;
   box-shadow: inset 1px 1px 5px 0px white, inset -2px -2px 5px #5EB0E6, 1px 1px 5px #2F2D2D;
+}
+
+.programs {
+  margin-top: 50px;
+  height: 210px;
+}
+
+.padding-program {
+  height: 210px !important;
+}
+
+.program-card {
+  border-radius: 20px;
+  background-color: #1A75B3;
+  height: 200px;
+  width: 65%;
 }
 
 .border-image {
@@ -122,7 +154,7 @@ body {
   text-overflow: ellipsis;
 }
 
-.doctor-card .doctor-code {
+.doctor-card .doctor-code, .program-name {
   top: 40%;
   position: absolute;
   left: 115px;
@@ -133,6 +165,14 @@ body {
   width: 15em;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.program-name {
+  font-size: 32px;
+  left: 10%;
+  top: 25%;
+  font-weight: bold;
+  width: 8em;
 }
 
 /* ID Selectors */
@@ -147,6 +187,28 @@ body {
   }
   .doctor-card .doctor-code {
     width: 8em;
+  }
+}
+
+@media (max-width: 719px) {
+  .educational-titles h1 {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .sub-title-2 {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .padding-program {
+    display: block !important;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 679px) {
+  .padding-doctor {
+    display: block !important;
+    margin: 5% auto;
   }
 }
 

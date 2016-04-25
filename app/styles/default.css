@@ -175,6 +175,21 @@ a {
   width: 8em;
 }
 
+.back-btn {
+  display: inline-block;
+  top: 15px;
+  left: 10px;
+  width: 84px;
+  line-height: 48px;
+  position: absolute;
+  text-decoration: none;
+  background: url("./img/back-button-sprite.png") 0 0;
+}
+
+.back-btn:hover {
+  background-position: 0px -48px;
+}
+
 /* ID Selectors */
 /* !important Universal Selectors */
 /* !important Element Selectors */
@@ -209,6 +224,12 @@ a {
   .padding-doctor {
     display: block !important;
     margin: 5% auto;
+  }
+}
+
+@media (max-width: 819px) {
+  .titles h1 {
+    margin-top: 70px;
   }
 }
 

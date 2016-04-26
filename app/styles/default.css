@@ -15,38 +15,6 @@
 }
 
 /*Variables*/
-.title-container {
-  position: relative;
-  z-index: -5;
-}
-
-.title {
-  position: relative;
-  padding: 1em;
-  background: radial-gradient(#308fcf 33%, #066CAF);
-  box-shadow: inset 0px -2px 12px -4px white;
-}
-
-.title:before,
-.title:after {
-  content: "";
-  position: absolute;
-  z-index: -2;
-}
-
-.curva:before {
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
-  top: 50%;
-  bottom: 0;
-  left: 10px;
-  right: 10px;
-  border-radius: 185px / 35px;
-}
-
-.title .curva .curva-h {
-  box-sizing: border-box !important;
-}
-
 /* Universal Selectors */
 /* Element Selectors */
 body {
@@ -68,10 +36,7 @@ a {
   width: 100%;
   text-align: center;
   color: white;
-}
-
-.title {
-  width: 98%;
+  box-sizing: border-box;
 }
 
 .title h2 {
@@ -87,8 +52,21 @@ a {
   font-size: 23px;
 }
 
+.curve {
+  width: 80%;
+  display: block;
+  border: none;
+  color: white;
+  height: 3px;
+  background: radial-gradient(#ffffff 3%, #308fcf 20%, #0a6fb2 70%, transparent 8%);
+  box-shadow: 0px 3px 5px -1px #06092F;
+  margin: 0 auto;
+  border: none;
+}
+
 .doctors {
   margin-top: 35px;
+  margin-left: -10px;
 }
 
 .doctors .padding-doctor, .programs .padding-program {
@@ -116,6 +94,7 @@ a {
 .programs {
   margin-top: 50px;
   height: 210px;
+  margin-left: -8px;
 }
 
 .padding-program {
@@ -230,6 +209,12 @@ a {
 @media (max-width: 819px) {
   .titles h1 {
     margin-top: 70px;
+  }
+}
+
+@media (max-width: 1119px) {
+  .doctor-name {
+    width: 10em;
   }
 }
 

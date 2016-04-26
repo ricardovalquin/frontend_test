@@ -25,38 +25,6 @@ $gradient-color:#308fcf;
 $card-color:#368ECA;
 $program-card-color:#1A75B3;
 
-.title-container {
-  position: relative;
-  z-index: -5;
-}
-.title {
-  position:relative;
-  padding:1em;
-  background: radial-gradient($gradient-color 33%, $primary-color);
-  box-shadow: inset 0px -2px 12px -4px rgba(255,255,255,1)
-}
-
-.title:before,
-.title:after {
-  content:"";
-  position:absolute;
-  z-index:-2;
-}
-
-.curva:before {
-  box-shadow:0 0 15px rgba(0,0,0,0.6);
-  top:50%;
-  bottom:0;
-  left:10px;
-  right:10px;
-  border-radius:185px / 35px;
-}
-
-
-.title .curva .curva-h{
-  box-sizing: border-box !important;
-}
-
 /* Universal Selectors */
 /* Element Selectors */
 body {
@@ -80,11 +48,7 @@ a{
   width: 100%;
   text-align: center;
   color: white;
-  //border-bottom: 1px solid black;
-}
-
-.title{
-  width: 98%;
+  box-sizing: border-box;
 }
 
 .title h2{
@@ -101,8 +65,21 @@ a{
 }
 
 
+.curve{
+  width: 80%;
+  display: block;
+  border: none;
+  color: white;
+  height: 3px;
+  background: radial-gradient(#ffffff 3%, #308fcf 20%, rgb(10, 111, 178) 70%, transparent 8%);
+  box-shadow: 0px 3px 5px -1px #06092F;
+  margin: 0 auto;
+  border: none;
+}
+
 .doctors{
   margin-top: 35px;
+  margin-left: -10px;
 }
 
 .doctors .padding-doctor, .programs .padding-program{
@@ -132,6 +109,7 @@ a{
 .programs{
   margin-top: 50px;
   height: 210px;
+  margin-left: -8px;
 }
 
 .padding-program{
@@ -257,5 +235,11 @@ a{
 @media (max-width: 819px){
   .titles h1{
     margin-top: 70px;
+  }
+}
+
+@media (max-width: 1119px) {
+  .doctor-name{
+    width: 10em;
   }
 }

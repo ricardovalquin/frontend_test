@@ -53,15 +53,17 @@ a {
 }
 
 .curve {
-  width: 80%;
+  width: 88%;
   display: block;
   border: none;
   color: white;
-  height: 3px;
+  height: 5px;
   background: radial-gradient(#ffffff 3%, #308fcf 20%, #0a6fb2 70%, transparent 8%);
   box-shadow: 0px 3px 5px -1px #06092F;
   margin: 0 auto;
   border: none;
+  background-color: transparent;
+  border-radius: 50%;
 }
 
 .doctors {
